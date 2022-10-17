@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Cooke's Restaurant</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <!-- Content container -->
+    <div class="container">
+        <!-- Top bar -->
+        <div class="top-bar">
+            <div id="top-bar__arrow"><img src="images/backarrow.png" alt="back arrow"></div>
+            <div class="top-bar__logo">Cooke's</div>
+        </div>
+        <!-- Wrapper for all meals -->
+        <div class="wrapper">
+            <br>
+            <p class="english bold">View Menu</p>
+            <p class="maori">Rārangi kai</p><br>
+            <!-- Menu categories buttons container -->
+            <div class="categories">
+
+                <!-- Mains button -->
+                <a href="./mains.html"><button class="categories__button">
+                    <p class="english">Mains</p>
+                    <p class="maori">Kai Matua</p>
+                </button></a>
+
+                <!-- Sides button-->
+                <a href="./sides.html"><button class="categories__button">
+                        <p class="english">Sides</p>
+                        <p class="maori">Taha Rīhi</p>
+                    </button></a>
+
+                <!-- Desserts button -->
+                <a href="./desserts.html"><button class="categories__button">
+                    <p class="english">Desserts</p>
+                    <p class="maori">Purini</p>
+                </button></a>
+
+                <!-- Drinks button -->
+                <a href="./drinks.html"><button class="categories__button">
+                    <p class="english">Drinks</p>
+                    <p class="maori">Inu</p>
+                </button></a>
+            </div> <!-- end menu categories buttons container -->
+            <br><br>
+
+            <!-- Specials -->
+            <p class="english bold">Specials</p>
+            <p class="maori">Motuhake</p><br>
+            <!-- Meal container -->
+            <div class="meals">
+
+                <!-- Meal item -->
+                <div class="meals__item">
+                    <!-- Meal Image -->
+                    <img src="./images/pizza.jpg" alt="margherita pizza">
+                    <!-- Meal Price -->
+                    <div class="meals__price">
+                        <p id="price" class="price">24.50</p>
+                    </div>
+                    <!-- Meal Name -->
+                    <div class="meals__name">
+                        <p class="english">Margherita Pizza</p>
+                        <p class="maori">Tōmato me te Tīhi Parehe</p>
+                        <p class="light">with tomatoes mozarella cheese and basil</p>
+                    </div>
+                    <!-- Quantity Selector -->
+                    <div class="meals__quantity">
+                        <!-- Minus Button -->
+                        <div class="meals__minus-button">
+                            <img src="./images/minus.png" alt="minus">
+                        </div>
+                        <!-- Quantity Input -->
+                        <input type="text" name="qty" class="qty" id="qty" value="0">
+                        <!-- Plus Button -->
+                        <div class="meals__plus-button">
+                            <img src="./images/plus.png" alt="plus">
+                        </div>
+                    </div> <!-- end quantity selector -->
+                </div> <!-- end meal item -->
+
+                <!-- Meal item -->
+                <div class="meals__item">
+                    <!-- Meal Image -->
+                    <img src="./images/salad-radish-blueberries-lettuce.jpg" alt="side salad">
+                    <!-- Meal Price -->
+                    <div class="meals__price">
+                        <p class="price">12.50</p>
+                    </div>
+                    <!-- Meal Name -->
+                    <div class="meals__name">
+                        <p class="english">Side Salad</p>
+                        <p class="maori">Huamata Taha</p>
+                        <p class="light">with radish blueberries and lettuce</p>
+                    </div>
+                    <!-- Quantity Selector -->
+                    <div class="meals__quantity">
+                        <!-- Minus Button -->
+                        <div class="meals__minus-button">
+                            <img src="./images/minus.png" alt="minus">
+                        </div>
+                        <!-- Quantity Input -->
+                        <input type="text" name="qty" class="qty" id="qty" value="0">
+                        <!-- Plus Button -->
+                        <div class="meals__plus-button">
+                            <img src="./images/plus.png" alt="plus">
+                        </div>
+                    </div> <!-- end quantity selector -->
+                </div> <!-- end meal item-->
+
+                <!-- Meal item -->
+                <div class="meals__item">
+                    <!-- Meal Image -->
+                    <img src="./images/batetreed-fries-aioli.jpg" alt="beer battered fries">
+                    <!-- Meal Price -->
+                    <div class="meals__price">
+                        <p id="price" class="price">10.20</p>
+                    </div>
+                    <!-- Meal Name -->
+                    <div class="meals__name">
+                        <p class="english">Beer Battered Fries</p>
+                        <p class="maori">Pia Koheri Tītipi</p>
+                        <p class="light">with aioli sauce</p>
+                    </div>
+                    <!-- Quantity Selector -->
+                    <div class="meals__quantity">
+                        <!-- Minus Button -->
+                        <div class="meals__minus-button">
+                            <img src="./images/minus.png" alt="minus">
+                        </div>
+                        <!-- Quantity Input -->
+                        <input type="text" name="qty" class="qty" id="qty" value="0">
+                        <!-- Plus Button -->
+                        <div class="meals__plus-button">
+                            <img src="./images/plus.png" alt="plus">
+                        </div>
+                    </div> <!-- end quantity selector -->
+                </div> <!-- end meal item -->
+
+                <!-- Meal item -->
+                <div class="meals__item">
+                    <!-- Meal Image -->
+                    <img src="./images/brownie.jpg" alt="chocolate brownie">
+                    <!-- Meal Price -->
+                    <div class="meals__price">
+                        <p class="price">10.50</p>
+                    </div>
+                    <!-- Meal Name -->
+                    <div class="meals__name">
+                        <p class="english">Chocolate Brownie</p>
+                        <p class="maori">Tiakarete Parāone</p>
+                        <p class="light">with chocolate chips and raspberries</p>
+                    </div>
+                    <!-- Quantity Selector -->
+                    <div class="meals__quantity">
+                        <!-- Minus Button -->
+                        <div class="meals__minus-button">
+                            <img src="./images/minus.png" alt="minus'">
+                        </div>
+                        <!-- Quantity Input -->
+                        <input type="text" name="qty" class="qty" id="qty" value="0">
+                        <!-- Plus Button -->
+                        <div class="meals__plus-button">
+                            <img src="./images/plus.png" alt="plus">
+                        </div>
+                    </div> <!-- end quantity selector -->
+                </div> <!-- end meal item-->
+
+            </div> <!-- end meal container -->
+
+
+        </div> <!-- end wrapper -->
+
+        <!-- Bottom bar -->
+        <div class="bottom-bar">
+            <div class="bottom-bar__wrapper">
+                <p id="total-price-text">Total: $</p>
+                <div class="bottom-bar__price" id="bottom-bar__price">0.00</div>
+                <a href="./summary.html"><button class="bottom-bar__button">View Cart</button></a>
+            </div>
+        </div> <!-- end bottom bar -->
+
+    </div> <!-- end content container -->
+
+    <!-- Script -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

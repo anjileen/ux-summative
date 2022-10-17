@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary| Cooke's Restaurant</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Content container -->
+    <div class="container">
+        <!-- Top bar -->
+        <div class="top-bar">
+            <div id="top-bar__arrow"><img src="images/backarrow.png" alt="back arrow"></div>
+            <div class="top-bar__logo">Cooke's</div>
+        </div>
+        <!-- Wrapper for summary -->
+        <div class="wrapper center">
+            <br><br>
+            <!-- Heading -->
+            <h2 class="bold">Order Summary</h2>
+            <hr><br><br>
+
+            <!-- Table -->
+            <table id="summary-table">
+                <tbody id="cart">
+                </tbody>
+            </table>
+
+            <br><br>
+            <!-- Total items -->
+            <div id="quantities" class="bold"></div>
+            <!-- Price total -->
+            <div id="final-total" class="bold"></div>
+
+        </div> <!-- end wrapper -->
+
+        <!-- Bottom bar -->
+        <div class="bottom-bar">
+            <div class="bottom-bar__wrapper">
+                <p id="total-price-text">Total: $</p>
+                <div class="bottom-bar__price" id="bottom-bar__price">0.00</div>
+                <a href="./confirmation.html"><button class="bottom-bar__button">Confirm</button></a>
+            </div>
+        </div>
+
+    </div> <!-- end container -->
+
+    <!-- Script -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

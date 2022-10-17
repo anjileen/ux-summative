@@ -1,0 +1,628 @@
+/* Variables */
+
+$background: #f9f9f9;
+$blue: #4f5262;
+$gold: #b99a65;
+$grey: #a6a6a6;
+
+
+/* Mixins */
+
+@mixin center {
+    text-align: center;
+}
+
+@mixin menu-button {
+    background: transparent;
+    color: $gold;
+    padding: 0.5em 2em;
+    border: 2px solid $gold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    @include center;
+}
+
+@mixin cta-button {
+    position: relative;
+    display: block;
+    width: 50%;
+    color: white;
+    box-shadow: 1px 1px 4px #656565;
+    padding: 1em 1em;
+    max-width: 250px;
+    border-radius: 60px;
+    border: none;
+    margin: 1.5em auto 0;
+    cursor: pointer;
+    font-weight: 600;
+    cursor: pointer;
+    @include center;
+}
+
+/* CSS Rest */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+/* Body stye */
+body {
+    padding-bottom: 8em;
+    color: $blue;
+    font-family: 'Open Sans', sans-serif;
+    background: $background;
+}
+
+/* Remove link underline */
+a {
+    text-decoration: none;
+}
+
+/* Remove bottom padding from start screen */
+#start {
+    padding-bottom: 0;
+}
+
+/* Content container */
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+/* Start page */
+#home {
+    background: $background;
+    padding-top: 1em;
+}
+
+/* Wrapper for content */
+.wrapper {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.center {
+    @include center;
+}
+
+hr {
+    width: 180px;
+    color: $blue;
+    height: 2px;
+    margin: 4px auto 0;
+    background: $blue;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 2rem;
+    @include center;
+    color: $gold;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    @include center;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Paragraph */
+
+p {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.grey {
+    color: $grey;
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: $gold;
+    color: white;
+    height: 50px;
+
+    /* Logo */
+    &__logo {
+    width: auto;
+    position: relative;
+    margin: auto;
+    font-size: 1.6rem;
+    }
+
+}
+
+/* Back arrow */
+#top-bar__arrow {
+    padding-left: 15px;
+
+    img {
+        width: 30px;
+    }
+}
+
+/* Language button */
+#lang-btn {
+    position: relative;
+    display: flex;
+    margin: auto auto 1em;
+    background: transparent;
+    color: $gold;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.8em 2em;
+    border: 2px solid $gold;
+    cursor: pointer;
+}
+
+.maori {
+    display: none;
+}
+
+/* Cover image wrapper */
+.cover-image {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background: $background;
+
+    /* Cover image */
+    img {
+        max-width: 500px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
+}
+
+/* Table buttons */
+.tables {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    justify-items: center;
+
+    &__button {
+        position: relative;
+        background: $gold;
+        width: 120px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1em 2em;
+        border-radius: 60px;
+        border: none;
+        cursor: pointer;
+        @include center;
+        z-index: 20;
+    }
+}
+
+/* Selected table button */
+.selected {
+    background: $blue;
+}
+
+/* Continue button */
+.continue-button {
+    position: relative;
+    display: block;
+    width: 60%;
+    min-width: 350px;
+    max-width: 400px;
+    background: $blue;
+    color: white;
+    box-shadow: 1px 1px 4px #656565;
+    padding: 0.5em 1em;
+    border-radius: 60px;
+    border: none;
+    margin: 1.5em auto 0;
+    cursor: pointer;
+    @include center;
+    z-index: 30;
+}
+
+#continue {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Menu categories */
+.categories {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+
+    &__button {
+        @include menu-button;
+        width: 100%;
+        
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+/* Full menu button */
+.fullmenu-btn {
+    width: auto;
+    max-width: 250px;
+    display: block;
+    float: right;
+    @include menu-button;
+}
+
+/* Meal items */
+.meals {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        position: relative;
+        width: 45%;
+        margin-bottom: 2em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__price {
+        width: 100%;
+    
+        p {
+            color: $blue;
+            text-align: right;
+            font-size: 1rem;
+        }
+    }
+
+    &__quantity {
+        width: 100%;
+        display: inline-block;
+        margin-top: auto;
+        padding-top: 1.2em;
+    }
+
+    &__minus-button {
+        display: inline-block;
+        width: 35px;
+    }
+    
+    &__plus-button {
+        display: inline-block;
+        width: 35px;
+    }
+}
+
+.meals__item::after {
+    content: "Allergy Info";
+    position: relative;
+    font-size: 14px;
+    color: #616161;
+    bottom: 0px;
+    left: 0;
+    padding-top: 10px;
+}
+
+/* Quantity input */
+
+.qty-input {
+    width: 50px;
+    height: 35px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 0.2em;
+    margin: 0 0.5em;
+}
+
+input.qty {
+    width: 40px;
+    height: 35px;
+    vertical-align: top;
+    @include center;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #ccc;
+}
+
+/* Bottom bar */
+.bottom-bar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    background: $background;
+    border-top: 2px solid $blue;
+    padding: 10px;
+
+    &__wrapper {
+        position: relative;
+        width: 80%;
+        margin: auto;
+    }
+
+    &__button {
+        width: 40%;
+        background: $blue;
+        color: white;
+        border-radius: 9px;
+        border: none;
+        float: right;
+        padding: 10px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    &__price {
+        font-size: 1.3rem;
+        float: left;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+}
+
+p#total-price-text {
+    font-size: 1.3rem;
+    float: left;
+    font-weight: 700;
+    padding: 10px 0;
+} 
+
+
+/* Order summary table */
+table {
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+
+tr:first-child {
+    display: none;
+}
+
+td {
+    padding-right: 3em;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+td:last-child {
+    padding-right: 0;
+}
+
+/* X remove button */
+
+.close::after {
+    content: "x";
+    position: relative;
+    color: rgb(160, 160, 160);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.remove {
+    display: none;
+}
+
+/* Progresss bar */
+.progress-bar {
+    width: 70%;
+    max-width: 400px;
+    height: 35px;
+    background: $gold;
+    border: 1px solid $grey;
+    border-radius: 30px;
+    margin: auto;
+    animation-name: progress;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+
+    &__text {
+        width: 70%;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5em auto 0;
+
+        p {
+            padding-right: 5px;
+            color: $grey;
+        }
+    }
+}
+
+/* Feedback button */
+.feedback-btn {
+    @include cta-button;
+    background: $gold;
+}
+
+/* Feedback section */
+.feedback-section {
+
+    &__star {
+        background: #cecece;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        display: inline-block;
+        height: 55px;
+        width: 55px;
+
+        &--blue-star {
+            background: $blue;
+        }
+        
+    } 
+
+    &__rating-btn {
+        position: relative;
+        display: block;
+        max-width: 150px;
+        background: $gold;
+        color: white;
+        padding: 0.3em 0.3em;
+        border: none;
+        margin: 1.5em auto 0;
+        cursor: pointer;
+        font-weight: 600;
+        @include center;
+    }
+
+}
+
+/* Feedback section default hidden state */
+#feedback-section {
+    display: none;
+}
+
+/* Textarea */
+textarea {
+    width: 80%;
+    max-width: 400px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+/* Submit confirmation message */
+#submit-message {
+    display: none;
+    margin-top: 10px;
+}
+
+/* New order button */
+.new-order-btn {
+    @include cta-button;
+    background: $blue;
+}
+
+/* Keyframes for progress bar */
+@keyframes progress {
+    0% {
+        background: linear-gradient(to right,$gold 10%,#f9f9f9 10%);
+    }
+
+    20% {
+        background: linear-gradient(to right,$gold 20%,#f9f9f9 10%);
+    }
+
+    30% {
+        background: linear-gradient(to right,$gold 25%,#f9f9f9 10%);
+    }
+
+    40% {
+        background: linear-gradient(to right,$gold 35%,#f9f9f9 10%);
+    }
+
+    50% {
+        background: linear-gradient(to right,$gold 50%,#f9f9f9 10%);
+    }
+
+    60% {
+        background: linear-gradient(to right,$gold 60%,#f9f9f9 10%);
+    }
+
+    70% {
+        background: linear-gradient(to right,$gold 70%,#f9f9f9 10%);
+    }
+
+    70% {
+        background: linear-gradient(to right,$gold 80%,#f9f9f9 5%);
+    }
+
+    100% {
+        background: linear-gradient(to right,$gold 100%,#f9f9f9 0%);
+    }
+}
+
+/* On small screens adjust paddings and width */
+@media (max-width: 500px) {
+    button {
+        padding: 5px 0;
+    }
+
+    .tables__button {
+        padding: 1.1em 0.2em;
+        width: 80%;
+        min-width: 90px;
+    }
+
+    .tables {
+        width: 90%;
+        grid-column-gap: 0.4em;
+    }
+
+    .wrapper {
+        width: 95%
+    }
+
+    .cover-image img {
+        max-width: 400px;
+    }
+
+    .continue-button {
+        width: 180px;
+        min-width: 100px;
+    }
+
+    .feedback-btn, .new-order-btn {
+        width: 70%;
+    }
+
+    .bottom-bar {
+        padding: 10px 0;
+    }
+
+    .bottom-bar__button {
+        padding: 10px 2px;
+    }
+
+    td {
+        padding-right: 1em;
+    }
+}
+
+/* Table container width on larger screens */
+@media (min-width: 800px) {
+    .tables {
+        width: 40%;
+        margin: auto;
+    }
+}

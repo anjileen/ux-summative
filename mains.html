@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mains | Cooke's Restaurant</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Content container -->
+    <div class="container">
+         <!-- Top bar -->
+        <div class="top-bar">
+        <div id="top-bar__arrow"><img src="images/backarrow.png" alt="back arrow"></div>
+        <div class="top-bar__logo">Cooke's</div>
+    </div>
+    <!-- Wrapper for all meals -->
+    <div class="wrapper">
+        <br>
+        <!-- Full Menu button -->
+        <a href="./dashboard.html"><button class="fullmenu-btn">
+            <p class="english light">View Full Menu</p>
+            <p class="maori light">Rārangi kai</p>
+            </button></a>
+        <br><br>
+
+        <p class="english bold">Mains</p>
+        <p class="maori">Kai Matua</p><br>
+
+        <!-- Meals container -->
+        <div class="meals">
+
+            <!-- Meal item -->
+            <div class="meals__item">
+                <!-- Meal Image -->
+                <img src="./images/pizza.jpg" alt="margherita pizza">
+                <!-- Meal Price -->
+                <div class="meals__price">
+                    <p id="price" class="price">24.50</p>
+                </div>
+                <!-- Meal Name -->
+                <div class="meals__name">
+                    <p class="english">Margherita Pizza</p>
+                    <p class="maori">Tōmato me te Tīhi Parehe</p>
+                    <p class="light">with tomatoes mozarella cheese and basil</p>
+                </div>
+                <!-- Quantity Selector -->
+                <div class="meals__quantity">
+                    <!-- Minus Button -->
+                    <div class="meals__minus-button">
+                        <img src="./images/minus.png" alt="minus">
+                    </div>
+                    <!-- Quantity Input -->
+                    <input type="text" name="qty" class="qty" id="qty" value="0">
+                    <!-- Plus Button -->
+                    <div class="meals__plus-button">
+                        <img src="./images/plus.png" alt="plus">
+                    </div>
+                </div> <!-- end quantity selector -->
+            </div> <!-- end meal item -->
+
+            <!-- Meal item -->
+            <div class="meals__item">
+                <!-- Meal Image -->
+                <img src="./images/chickenskewers.jpg" alt="chicken skewers">
+                <!-- Meal Price -->
+                <div class="meals__price">
+                    <p class="price">22.30</p>
+                </div>
+                <!-- Meal Name -->
+                <div class="meals__name">
+                    <p class="english">Chicken Skewers</p>
+                    <p class="maori">Heihei Skewers</p>
+                    <p class="light">with satay sauce</p>
+                </div>
+                <!-- Quantity Selector -->
+                <div class="meals__quantity">
+                    <!-- Minus Button -->
+                    <div class="meals__minus-button">
+                        <img src="./images/minus.png" alt="minus">
+                    </div>
+                    <!-- Quantity Input -->
+                    <input type="text" name="qty" class="qty" id="qty" value="0">
+                    <!-- Plus Button -->
+                    <div class="meals__plus-button">
+                        <img src="./images/plus.png" alt="plus">
+                    </div>
+                </div> <!-- end quantity selector -->
+            </div> <!-- end meal item-->
+
+            <!-- Meal item -->
+            <div class="meals__item">
+                <!-- Meal Image -->
+                <img src="./images/burger.png" alt="beef burger">
+                <!-- Meal Price -->
+                <div class="meals__price">
+                    <p id="price" class="price">24.50</p>
+                </div>
+                <!-- Meal Name -->
+                <div class="meals__name">
+                    <p class="english">Beef Burger</p>
+                    <p class="maori">Pākā Mīti Kau</p>
+                    <p class="light">with lettuce tomatoes cheese and onion</p>
+                </div>
+                <!-- Quantity Selector -->
+                <div class="meals__quantity">
+                    <!-- Minus Button -->
+                    <div class="meals__minus-button">
+                        <img src="./images/minus.png" alt="minus">
+                    </div>
+                    <!-- Quantity Input -->
+                    <input type="text" name="qty" class="qty" id="qty" value="0">
+                    <!-- Plus Button -->
+                    <div class="meals__plus-button">
+                        <img src="./images/plus.png" alt="plus">
+                    </div>
+                </div> <!-- end quantity selector -->
+            </div> <!-- end meal item -->
+
+            <!-- Meal item -->
+            <div class="meals__item">
+                <!-- Meal Image -->
+                <img src="./images/stirfriedfish.jpg" alt="stir fried fish">
+                <!-- Meal Price -->
+                <div class="meals__price">
+                    <p class="price">10.20</p>
+                </div>
+                <!-- Meal Name -->
+                <div class="meals__name">
+                    <p class="english">Stir Fried Fish</p>
+                    <p class="maori">Parai Parai Ika</p>
+                    <p class="light">with sweet chilli</p>
+                </div>
+                <!-- Quantity Selector -->
+                <div class="meals__quantity">
+                    <!-- Minus Button -->
+                    <div class="meals__minus-button">
+                        <img src="./images/minus.png" alt="minus">
+                    </div>
+                    <!-- Quantity Input -->
+                    <input type="text" name="qty" class="qty" id="qty" value="0">
+                    <!-- Plus Button -->
+                    <div class="meals__plus-button">
+                        <img src="./images/plus.png" alt="plus">
+                    </div>
+                </div> <!-- end quantity selector -->
+            </div> <!-- end meal item-->
+
+        </div> <!-- end meal container -->
+
+
+    </div> <!-- end wrapper -->
+
+    <!-- Bottom bar -->
+    <div class="bottom-bar">
+        <div class="bottom-bar__wrapper">
+            <p id="total-price-text">Total: $</p>
+            <div class="bottom-bar__price" id="bottom-bar__price">0.00</div>
+            <a href="./summary.html"><button class="bottom-bar__button">View Cart</button></a>
+        </div>
+    </div> <!-- end bottom bar -->
+
+    </div> <!-- end content container -->
+
+    <!-- Script -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

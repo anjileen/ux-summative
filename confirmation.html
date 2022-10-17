@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation | Cooke's Restaurant</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Content container -->
+    <div class="container">
+        <!-- Top bar -->
+        <div class="top-bar">
+            <div class="top-bar__logo">Cooke's</div>
+        </div>
+        <!-- Wrapper for confirmation -->
+        <div class="wrapper center">
+            <br><br>
+            <!-- Heading -->
+            <h2 class="bold">Order Placed</h2>
+            <hr>
+            <h3 class="grey">Thank You</h3><br><br>
+
+            <!-- Order progress bar -->
+            <div class="progress-bar"></div>
+            <div class="progress-bar__text">
+                <p>order received</p>
+                <p>cooking order</p>
+                <p>order ready</p>
+            </div>
+            <br><br>
+
+            <!-- Feedback button -->
+            <div class="feedback-btn" id="feedback-btn">Leave Feedback</div>
+            <!-- Feedback section -->
+            <div class="feedback-section" id="feedback-section">
+                <p>Would you like to rate your order?</p>
+                <br>
+                <div class="feedback-section__star"></div>
+                <div class="feedback-section__star"></div>
+                <div class="feedback-section__star"></div>
+                <div class="feedback-section__star"></div>
+                <div class="feedback-section__star"></div>
+
+                <br><br>
+                <p>Comments/suggestions</p>
+                <textarea></textarea>
+                <div class="feedback-section__rating-btn" id="feedback-section__rating-btn">Submit rating</div>
+                <p id="submit-message">Submitted. Thank you.</p>
+                <br>
+            </div> <!-- end feedback section -->
+
+            <!-- New Order button-->
+            <a href="./index.html">
+                <div class="new-order-btn" id="new-order-btn">New Order</div>
+            </a>
+
+        </div> <!-- end wrapper -->
+
+    </div> <!-- end container -->
+
+    <!-- Script -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
